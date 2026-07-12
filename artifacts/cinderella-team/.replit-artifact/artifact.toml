@@ -1,0 +1,27 @@
+kind = "web"
+previewPath = "/"
+title = "Cinderella Team"
+version = "1.0.0"
+id = "artifacts/cinderella-team"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25352
+
+[services.development]
+run = "pnpm --filter @workspace/cinderella-team run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/cinderella-team", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/cinderella-team/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25352"
+BASE_PATH = "/"
