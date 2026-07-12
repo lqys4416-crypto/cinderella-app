@@ -1,0 +1,23 @@
+kind = "mobile"
+previewPath = "/cinderella-mobile/"
+title = "Cinderella Team Mobile"
+version = "1.0.0"
+id = "artifacts/cinderella-mobile"
+router = "expo-domain"
+
+[[services]]
+name = "expo"
+ensurePreviewReachable = "/status"
+paths = [ "/cinderella-mobile/" ]
+localPort = 23518
+
+[services.development]
+run = "pnpm --filter @workspace/cinderella-mobile run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/cinderella-mobile", "run", "build" ]
+run = [ "pnpm", "--filter", "@workspace/cinderella-mobile", "run", "serve" ]
+
+[services.env]
+PORT = "23518"
+BASE_PATH = "/cinderella-mobile/"
