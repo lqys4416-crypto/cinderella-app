@@ -44,5 +44,5 @@ jobs:
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: cinderella-team-apk
+          name: asset-manager-apk
           path: artifacts/cinderella-mobile/android/app/build/outputs/apk/debug/app-debug.apk

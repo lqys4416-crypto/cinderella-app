@@ -10,7 +10,7 @@ interface StatCardProps {
   subtitle?: string;
 }
 
-export function StatCard({ title, value, icon, iconColor = '#E8A830', subtitle }: StatCardProps) {
+export function StatCard({ title, value, icon, iconColor = '#3B82F6', subtitle }: StatCardProps) {
   return (
     <View style={styles.card}>
       <View style={[styles.iconWrap, { backgroundColor: iconColor + '22' }]}>
@@ -26,11 +26,11 @@ export function StatCard({ title, value, icon, iconColor = '#E8A830', subtitle }
 const styles = StyleSheet.create({
   card: {
     flex: 1,
-    backgroundColor: '#141414',
+    backgroundColor: '#1E293B',
     borderRadius: 14,
     padding: 16,
     borderWidth: 1,
-    borderColor: '#2D2516',
+    borderColor: '#334155',
     alignItems: 'flex-end',
     minWidth: 140,
     margin: 4,
@@ -46,20 +46,20 @@ const styles = StyleSheet.create({
   value: {
     fontFamily: 'Cairo_900Black',
     fontSize: 22,
-    color: '#F2F2F2',
+    color: '#F8FAFC',
     textAlign: 'right',
   },
   title: {
     fontFamily: 'Cairo_400Regular',
     fontSize: 13,
-    color: '#999',
+    color: '#94A3B8',
     textAlign: 'right',
     marginTop: 2,
   },
   subtitle: {
     fontFamily: 'Cairo_600SemiBold',
     fontSize: 12,
-    color: '#E8A830',
+    color: '#3B82F6',
     textAlign: 'right',
     marginTop: 4,
   },

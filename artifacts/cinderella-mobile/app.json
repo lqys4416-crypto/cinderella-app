@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "Cinderella Team",
-    "slug": "cinderella-mobile",
+    "name": "Asset Manager",
+    "slug": "asset-manager",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "cinderella-mobile",
+    "scheme": "asset-manager",
     "userInterfaceStyle": "dark",
     "newArchEnabled": true,
     "splash": {
@@ -15,14 +15,14 @@
     },
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "com.cinderella.team"
+      "bundleIdentifier": "com.asset.manager"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#0D0D0D"
       },
-      "package": "com.cinderella.team",
+      "package": "com.asset.manager",
       "versionCode": 1
     },
     "web": {

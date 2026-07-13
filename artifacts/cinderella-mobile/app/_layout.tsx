@@ -29,7 +29,7 @@ if (process.env.EXPO_PUBLIC_DOMAIN) {
 
 // ─── Splash screen ────────────────────────────────────────────────────────────
 SplashScreen.preventAutoHideAsync();
-SystemUI.setBackgroundColorAsync('#0D0D0D').catch(() => {});
+SystemUI.setBackgroundColorAsync('#0F172A').catch(() => {});
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -48,8 +48,8 @@ function RootLayoutNav() {
         options={{
           headerShown: true,
           title: 'تفاصيل الطلب',
-          headerStyle: { backgroundColor: '#141414' },
-          headerTintColor: '#E8A830',
+          headerStyle: { backgroundColor: '#1E293B' },
+          headerTintColor: '#3B82F6',
           headerTitleStyle: { fontFamily: 'Cairo_700Bold', fontSize: 18 },
           headerBackTitle: 'رجوع',
         }}
@@ -59,8 +59,8 @@ function RootLayoutNav() {
         options={{
           headerShown: true,
           title: 'طلب جديد',
-          headerStyle: { backgroundColor: '#141414' },
-          headerTintColor: '#E8A830',
+          headerStyle: { backgroundColor: '#1E293B' },
+          headerTintColor: '#3B82F6',
           headerTitleStyle: { fontFamily: 'Cairo_700Bold', fontSize: 18 },
           headerBackTitle: 'رجوع',
         }}
@@ -70,8 +70,8 @@ function RootLayoutNav() {
         options={{
           headerShown: true,
           title: 'تفاصيل المنتج',
-          headerStyle: { backgroundColor: '#141414' },
-          headerTintColor: '#E8A830',
+          headerStyle: { backgroundColor: '#1E293B' },
+          headerTintColor: '#3B82F6',
           headerTitleStyle: { fontFamily: 'Cairo_700Bold', fontSize: 18 },
           headerBackTitle: 'رجوع',
         }}
@@ -81,8 +81,8 @@ function RootLayoutNav() {
         options={{
           headerShown: true,
           title: 'منتج جديد',
-          headerStyle: { backgroundColor: '#141414' },
-          headerTintColor: '#E8A830',
+          headerStyle: { backgroundColor: '#1E293B' },
+          headerTintColor: '#3B82F6',
           headerTitleStyle: { fontFamily: 'Cairo_700Bold', fontSize: 18 },
           headerBackTitle: 'رجوع',
         }}
@@ -92,8 +92,8 @@ function RootLayoutNav() {
         options={{
           headerShown: true,
           title: 'المسوقات',
-          headerStyle: { backgroundColor: '#141414' },
-          headerTintColor: '#E8A830',
+          headerStyle: { backgroundColor: '#1E293B' },
+          headerTintColor: '#3B82F6',
           headerTitleStyle: { fontFamily: 'Cairo_700Bold', fontSize: 18 },
           headerBackTitle: 'رجوع',
         }}
@@ -103,8 +103,8 @@ function RootLayoutNav() {
         options={{
           headerShown: true,
           title: 'تفاصيل المسوقة',
-          headerStyle: { backgroundColor: '#141414' },
-          headerTintColor: '#E8A830',
+          headerStyle: { backgroundColor: '#1E293B' },
+          headerTintColor: '#3B82F6',
           headerTitleStyle: { fontFamily: 'Cairo_700Bold', fontSize: 18 },
           headerBackTitle: 'رجوع',
         }}
@@ -114,8 +114,8 @@ function RootLayoutNav() {
         options={{
           headerShown: true,
           title: 'مسوقة جديدة',
-          headerStyle: { backgroundColor: '#141414' },
-          headerTintColor: '#E8A830',
+          headerStyle: { backgroundColor: '#1E293B' },
+          headerTintColor: '#3B82F6',
           headerTitleStyle: { fontFamily: 'Cairo_700Bold', fontSize: 18 },
           headerBackTitle: 'رجوع',
         }}
@@ -125,8 +125,8 @@ function RootLayoutNav() {
         options={{
           headerShown: true,
           title: 'التقارير',
-          headerStyle: { backgroundColor: '#141414' },
-          headerTintColor: '#E8A830',
+          headerStyle: { backgroundColor: '#1E293B' },
+          headerTintColor: '#3B82F6',
           headerTitleStyle: { fontFamily: 'Cairo_700Bold', fontSize: 18 },
           headerBackTitle: 'رجوع',
         }}

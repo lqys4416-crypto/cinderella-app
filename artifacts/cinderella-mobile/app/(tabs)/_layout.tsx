@@ -17,13 +17,13 @@ function NativeTabLayout() {
         <Icon sf={{ default: 'house', selected: 'house.fill' }} />
         <Label>الرئيسية</Label>
       </NativeTabs.Trigger>
+      <NativeTabs.Trigger name="assets">
+        <Icon sf={{ default: 'cube', selected: 'cube.fill' }} />
+        <Label>الأصول</Label>
+      </NativeTabs.Trigger>
       <NativeTabs.Trigger name="orders">
         <Icon sf={{ default: 'list.bullet', selected: 'list.bullet.circle.fill' }} />
         <Label>الطلبات</Label>
-      </NativeTabs.Trigger>
-      <NativeTabs.Trigger name="products">
-        <Icon sf={{ default: 'cube', selected: 'cube.fill' }} />
-        <Label>المنتجات</Label>
       </NativeTabs.Trigger>
       <NativeTabs.Trigger name="notifications">
         <Icon sf={{ default: 'bell', selected: 'bell.fill' }} />
@@ -52,9 +52,9 @@ function ClassicTabLayout() {
         headerShown: false,
         tabBarStyle: {
           position: 'absolute',
-          backgroundColor: isIOS ? 'transparent' : '#141414',
+          backgroundColor: isIOS ? 'transparent' : '#1E293B',
           borderTopWidth: 1,
-          borderTopColor: '#2D2516',
+          borderTopColor: '#334155',
           elevation: 0,
           height: isWeb ? 84 : 60,
           paddingBottom: isWeb ? 34 : 8,
@@ -71,7 +71,7 @@ function ClassicTabLayout() {
               style={StyleSheet.absoluteFill}
             />
           ) : (
-            <View style={[StyleSheet.absoluteFill, { backgroundColor: '#141414', borderTopWidth: 1, borderTopColor: '#2D2516' }]} />
+            <View style={[StyleSheet.absoluteFill, { backgroundColor: '#1E293B', borderTopWidth: 1, borderTopColor: '#334155' }]} />
           ),
       }}
     >
@@ -88,6 +88,18 @@ function ClassicTabLayout() {
         }}
       />
       <Tabs.Screen
+        name="assets"
+        options={{
+          title: 'الأصول',
+          tabBarIcon: ({ color, focused }) =>
+            isIOS ? (
+              <SymbolView name={focused ? 'cube.fill' : 'cube'} tintColor={color} size={24} />
+            ) : (
+              <Ionicons name={focused ? 'cube' : 'cube-outline'} size={22} color={color} />
+            ),
+        }}
+      />
+      <Tabs.Screen
         name="orders"
         options={{
           title: 'الطلبات',
@@ -96,18 +108,6 @@ function ClassicTabLayout() {
               <SymbolView name={focused ? 'list.bullet.circle.fill' : 'list.bullet'} tintColor={color} size={24} />
             ) : (
               <Ionicons name={focused ? 'receipt' : 'receipt-outline'} size={22} color={color} />
-            ),
-        }}
-      />
-      <Tabs.Screen
-        name="products"
-        options={{
-          title: 'المنتجات',
-          tabBarIcon: ({ color, focused }) =>
-            isIOS ? (
-              <SymbolView name={focused ? 'cube.fill' : 'cube'} tintColor={color} size={24} />
-            ) : (
-              <Ionicons name={focused ? 'cube' : 'cube-outline'} size={22} color={color} />
             ),
         }}
       />
@@ -144,8 +144,8 @@ export default function TabLayout() {
 
   if (isLoading) {
     return (
-      <View style={{ flex: 1, backgroundColor: '#0D0D0D', justifyContent: 'center', alignItems: 'center' }}>
-        <ActivityIndicator size="large" color="#E8A830" />
+      <View style={{ flex: 1, backgroundColor: '#0F172A', justifyContent: 'center', alignItems: 'center' }}>
+        <ActivityIndicator size="large" color="#3B82F6" />
       </View>
     );
   }

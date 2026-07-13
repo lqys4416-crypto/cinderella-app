@@ -17,7 +17,7 @@ import { useLogin } from '@workspace/api-client-react';
 import { useAuth } from '@/context/AuthContext';
 import { useQueryClient } from '@tanstack/react-query';
 import { InputField } from '@/components/InputField';
-import { GoldButton } from '@/components/GoldButton';
+import { PrimaryButton } from '@/components/PrimaryButton';
 
 export default function LoginScreen() {
   const insets = useSafeAreaInsets();
@@ -50,7 +50,7 @@ export default function LoginScreen() {
 
   return (
     <KeyboardAvoidingView
-      style={[styles.root, { backgroundColor: '#0D0D0D' }]}
+      style={[styles.root, { backgroundColor: '#0F172A' }]}
       behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
     >
       <ScrollView
@@ -60,15 +60,15 @@ export default function LoginScreen() {
       >
         {/* Logo / Brand */}
         <View style={styles.logoSection}>
-          <View style={styles.crownBadge}>
+          <View style={styles.logoBadge}>
             <Image
               source={require('../assets/images/icon.png')}
               style={styles.iconImg}
               resizeMode="contain"
             />
           </View>
-          <Text style={styles.brandName}>CINDERELLA</Text>
-          <Text style={styles.brandSub}>LUXURY MANAGEMENT</Text>
+          <Text style={styles.brandName}>ASSET MANAGER</Text>
+          <Text style={styles.brandSub}>PROFESSIONAL SOLUTIONS</Text>
         </View>
 
         {/* Card */}
@@ -98,7 +98,7 @@ export default function LoginScreen() {
 
           {error ? <Text style={styles.errorText}>{error}</Text> : null}
 
-          <GoldButton
+          <PrimaryButton
             title="دخول"
             onPress={handleLogin}
             loading={isPending}
@@ -114,12 +114,12 @@ const styles = StyleSheet.create({
   root: { flex: 1 },
   scroll: { flexGrow: 1, paddingHorizontal: 24, justifyContent: 'center' },
   logoSection: { alignItems: 'center', marginBottom: 40 },
-  crownBadge: {
+  logoBadge: {
     width: 100,
     height: 100,
     borderRadius: 50,
     borderWidth: 2,
-    borderColor: '#E8A830',
+    borderColor: '#3B82F6',
     justifyContent: 'center',
     alignItems: 'center',
     marginBottom: 16,
@@ -128,42 +128,42 @@ const styles = StyleSheet.create({
   iconImg: { width: 100, height: 100 },
   brandName: {
     fontFamily: 'Cairo_900Black',
-    fontSize: 28,
-    color: '#E8A830',
-    letterSpacing: 6,
+    fontSize: 24,
+    color: '#3B82F6',
+    letterSpacing: 2,
   },
   brandSub: {
     fontFamily: 'Cairo_400Regular',
-    fontSize: 12,
-    color: '#999999',
+    fontSize: 10,
+    color: '#94A3B8',
     letterSpacing: 4,
     marginTop: 4,
   },
   card: {
-    backgroundColor: '#141414',
+    backgroundColor: '#1E293B',
     borderRadius: 16,
     padding: 28,
     borderWidth: 1,
-    borderColor: '#2D2516',
+    borderColor: '#334155',
   },
   cardTitle: {
     fontFamily: 'Cairo_700Bold',
     fontSize: 22,
-    color: '#F2F2F2',
+    color: '#F8FAFC',
     textAlign: 'center',
     marginBottom: 6,
   },
   cardSubtitle: {
     fontFamily: 'Cairo_400Regular',
     fontSize: 14,
-    color: '#999999',
+    color: '#94A3B8',
     textAlign: 'center',
     marginBottom: 24,
   },
   errorText: {
     fontFamily: 'Cairo_400Regular',
     fontSize: 13,
-    color: '#D93030',
+    color: '#EF4444',
     textAlign: 'center',
     marginBottom: 12,
   },

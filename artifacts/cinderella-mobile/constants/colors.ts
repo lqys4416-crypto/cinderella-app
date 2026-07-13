@@ -1,29 +1,28 @@
-// Cinderella Team — Brand colors: luxury black + gold
-// HSL source from web artifact index.css
+// Asset Manager — Brand colors: Professional Blue + Dark
 // Always dark — both light and dark themes use the same palette
 
 const palette = {
-  background: '#0D0D0D',       // hsl(0 0% 5%)
-  foreground: '#F2F2F2',       // hsl(0 0% 95%)
-  card: '#141414',             // hsl(0 0% 8%)
-  cardForeground: '#F2F2F2',
-  primary: '#E8A830',          // hsl(43 80% 55%) — gold
-  primaryForeground: '#0D0D0D',
-  secondary: '#262626',        // hsl(0 0% 15%)
-  secondaryForeground: '#F2F2F2',
-  muted: '#1F1F1F',            // hsl(0 0% 12%)
-  mutedForeground: '#999999',  // hsl(0 0% 60%)
-  accent: '#C48820',           // hsl(43 70% 45%) — darker gold
-  accentForeground: '#0D0D0D',
-  destructive: '#D93030',      // hsl(0 70% 50%)
-  destructiveForeground: '#F2F2F2',
-  border: '#2D2516',           // solid version of border with gold hue
-  input: '#1F1F1F',
-  text: '#F2F2F2',
-  tint: '#E8A830',
+  background: '#0F172A',       // Slate 900
+  foreground: '#F8FAFC',       // Slate 50
+  card: '#1E293B',             // Slate 800
+  cardForeground: '#F8FAFC',
+  primary: '#3B82F6',          // Blue 500
+  primaryForeground: '#FFFFFF',
+  secondary: '#334155',        // Slate 700
+  secondaryForeground: '#F8FAFC',
+  muted: '#1E293B',
+  mutedForeground: '#94A3B8',  // Slate 400
+  accent: '#2563EB',           // Blue 600
+  accentForeground: '#FFFFFF',
+  destructive: '#EF4444',      // Red 500
+  destructiveForeground: '#F8FAFC',
+  border: '#334155',           // Slate 700
+  input: '#1E293B',
+  text: '#F8FAFC',
+  tint: '#3B82F6',
   // Semantic chart colors
-  chartGold: '#E8A830',
   chartBlue: '#3B82F6',
+  chartIndigo: '#6366F1',
   chartGreen: '#10B981',
   chartRed: '#EF4444',
   chartPurple: '#8B5CF6',

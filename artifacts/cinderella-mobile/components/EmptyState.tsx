@@ -14,7 +14,7 @@ export function EmptyState({ icon, title, subtitle, actionLabel, onAction }: Emp
   return (
     <View style={styles.container}>
       <View style={styles.iconWrap}>
-        <Ionicons name={icon} size={48} color="#2D2516" />
+        <Ionicons name={icon} size={48} color="#334155" />
       </View>
       <Text style={styles.title}>{title}</Text>
       {subtitle ? <Text style={styles.subtitle}>{subtitle}</Text> : null}
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     width: 80,
     height: 80,
     borderRadius: 40,
-    backgroundColor: '#1F1F1F',
+    backgroundColor: '#1E293B',
     justifyContent: 'center',
     alignItems: 'center',
     marginBottom: 20,
@@ -41,20 +41,20 @@ const styles = StyleSheet.create({
   title: {
     fontFamily: 'Cairo_700Bold',
     fontSize: 18,
-    color: '#F2F2F2',
+    color: '#F8FAFC',
     textAlign: 'center',
     marginBottom: 8,
   },
   subtitle: {
     fontFamily: 'Cairo_400Regular',
     fontSize: 14,
-    color: '#999',
+    color: '#94A3B8',
     textAlign: 'center',
     marginBottom: 24,
     lineHeight: 22,
   },
   actionBtn: {
-    backgroundColor: '#E8A830',
+    backgroundColor: '#3B82F6',
     paddingVertical: 12,
     paddingHorizontal: 28,
     borderRadius: 10,
@@ -62,6 +62,6 @@ const styles = StyleSheet.create({
   actionLabel: {
     fontFamily: 'Cairo_700Bold',
     fontSize: 15,
-    color: '#0D0D0D',
+    color: '#FFFFFF',
   },
 });
